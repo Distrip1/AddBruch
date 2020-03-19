@@ -14,6 +14,8 @@ int main(){
 	std::cout << "Bitte geben Sie den Nenner der zweiten Zahl an: ";
 	std::cin >> n2;
 	n = n1 * n2;
+	if(n == 0)
+		return main();
 	z1 = z1 * n2;
 	z2 = z2 * n1;
 	z = z1 + z2;
@@ -41,7 +43,6 @@ int kuerzen(int x, int n, int z, int i){
 		return z;
 	}
 }
-
 
 int gGT(int n, int z){
 	if(n == 0){
